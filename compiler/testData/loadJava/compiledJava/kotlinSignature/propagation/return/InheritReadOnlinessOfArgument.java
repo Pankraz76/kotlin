@@ -1,7 +1,6 @@
 package test;
 
 import java.util.List;
-import java.util.Collection;
 
 public interface InheritReadOnlinessOfArgument {
 

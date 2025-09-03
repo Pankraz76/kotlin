@@ -5,7 +5,6 @@
 
 package org.jetbrains.kotlin.descriptors.impl;
 
-import kotlin.Pair;
 import kotlin.collections.CollectionsKt;
 import kotlin.jvm.functions.Function1;
 import org.jetbrains.annotations.NotNull;

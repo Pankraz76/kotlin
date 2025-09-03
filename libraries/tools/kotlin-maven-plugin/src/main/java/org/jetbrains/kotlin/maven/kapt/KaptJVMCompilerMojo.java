@@ -18,7 +18,6 @@ package org.jetbrains.kotlin.maven.kapt;
 
 import org.apache.maven.artifact.handler.manager.ArtifactHandlerManager;
 import org.apache.maven.artifact.resolver.ResolutionErrorHandler;
-import org.apache.maven.execution.MavenSession;
 import org.apache.maven.plugin.MojoExecutionException;
 import org.apache.maven.plugin.compiler.DependencyCoordinate;
 import org.apache.maven.plugins.annotations.*;

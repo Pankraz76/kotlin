@@ -9,7 +9,6 @@ import java.io.File;
 import java.nio.file.Path;
 import java.util.Collection;
 import java.util.Collections;
-import java.util.concurrent.Future;
 
 public final class Callbacks {
 
