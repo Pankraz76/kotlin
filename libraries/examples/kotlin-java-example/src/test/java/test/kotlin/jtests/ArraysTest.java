@@ -5,7 +5,6 @@ import kotlin.*;
 import kotlin.jvm.functions.Function1;
 
 import java.util.Collection;
-import java.util.List;
 
 import static kotlin.collections.CollectionsKt.*;
 import static kotlin.collections.ArraysKt.*;

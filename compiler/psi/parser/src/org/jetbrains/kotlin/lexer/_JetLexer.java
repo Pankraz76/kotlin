@@ -8,8 +8,6 @@ import com.intellij.lexer.*;
 import com.intellij.psi.*;
 import com.intellij.psi.tree.IElementType;
 import com.intellij.util.containers.Stack;
-import org.jetbrains.kotlin.lexer.KotlinLexerException;
-import org.jetbrains.kotlin.lexer.KtTokens;
 
 
 class _JetLexer implements FlexLexer {

@@ -20,7 +20,6 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 import org.jetbrains.kotlin.descriptors.CallableDescriptor;
 import org.jetbrains.kotlin.types.KotlinType;
-import org.jetbrains.kotlin.types.checker.NewKotlinTypeChecker;
 
 /**
  * [ExtensionReceiver] is a receiver for pure `this` call inside lambda with receiver

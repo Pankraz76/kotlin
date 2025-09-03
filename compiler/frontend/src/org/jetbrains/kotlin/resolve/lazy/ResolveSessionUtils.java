@@ -16,8 +16,6 @@
 
 package org.jetbrains.kotlin.resolve.lazy;
 
-import kotlin.Deprecated;
-import kotlin.ReplaceWith;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 import org.jetbrains.kotlin.descriptors.ClassDescriptor;
@@ -28,8 +26,6 @@ import org.jetbrains.kotlin.incremental.components.NoLookupLocation;
 import org.jetbrains.kotlin.name.FqName;
 import org.jetbrains.kotlin.name.FqNamesUtilKt;
 import org.jetbrains.kotlin.name.Name;
-import org.jetbrains.kotlin.psi.KtNamedDeclaration;
-import org.jetbrains.kotlin.psi.psiUtil.KtPsiUtilKt;
 import org.jetbrains.kotlin.resolve.scopes.MemberScope;
 
 import java.util.ArrayList;

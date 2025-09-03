@@ -1,8 +1,5 @@
 package test;
 
-import java.lang.Object;
-import java.lang.Override;
-import java.lang.UnsupportedOperationException;
 
 public class RawSuperTypeWithRecursiveBound {
 

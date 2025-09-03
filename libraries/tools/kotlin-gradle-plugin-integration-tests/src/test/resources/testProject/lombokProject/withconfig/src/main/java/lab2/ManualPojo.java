@@ -1,6 +1,5 @@
 package lab2;
 
-import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 public class ManualPojo {

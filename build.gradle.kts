@@ -67,7 +67,12 @@ plugins {
     id("gradle-plugins-documentation") apply false
     id("com.autonomousapps.dependency-analysis") version "2.19.0"
     id("project-tests-convention") apply false
+    id("org.openrewrite.rewrite") version "7.15.0"
+    id("com.diffplug.spotless") version "7.2.1"
+    id("pmd")
 }
+
+apply(from = "gradle/quality-gate.gradle")
 
 val isTeamcityBuild = project.kotlinBuildProperties.isTeamcityBuild
 

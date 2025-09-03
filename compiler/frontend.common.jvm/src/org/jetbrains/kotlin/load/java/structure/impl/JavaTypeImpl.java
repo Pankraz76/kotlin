@@ -28,7 +28,6 @@ import org.jetbrains.kotlin.load.java.structure.impl.source.JavaSourceFactoryOwn
 import org.jetbrains.kotlin.name.FqName;
 
 import java.util.Collection;
-import java.util.function.Function;
 
 public abstract class JavaTypeImpl<Psi extends PsiType> implements JavaType, JavaAnnotationOwnerImpl, JavaSourceFactoryOwner {
     private final JavaElementTypeSource<Psi> psiType;

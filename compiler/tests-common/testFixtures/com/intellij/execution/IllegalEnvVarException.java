@@ -5,7 +5,6 @@
 
 package com.intellij.execution;
 
-import com.intellij.openapi.util.NlsContexts;
 
 public class IllegalEnvVarException extends ExecutionException {
     public IllegalEnvVarException(String message) {

@@ -1,8 +1,5 @@
 package test;
 
-import java.io.Serializable;
-import java.lang.Comparable;
-import java.lang.Runnable;
 import java.util.List;
 
 public interface SubclassWithRawType {
