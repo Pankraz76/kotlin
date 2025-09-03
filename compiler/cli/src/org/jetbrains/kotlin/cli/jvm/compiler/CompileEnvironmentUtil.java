@@ -34,8 +34,6 @@ import org.jetbrains.kotlin.utils.ExceptionUtilsKt;
 import org.jetbrains.kotlin.utils.PathUtil;
 
 import java.io.*;
-import java.util.Calendar;
-import java.util.GregorianCalendar;
 import java.util.jar.*;
 
 import static org.jetbrains.kotlin.cli.common.messages.CompilerMessageSeverity.ERROR;

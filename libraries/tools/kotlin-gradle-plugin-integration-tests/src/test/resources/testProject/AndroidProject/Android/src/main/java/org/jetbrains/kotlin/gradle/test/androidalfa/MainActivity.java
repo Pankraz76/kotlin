@@ -7,7 +7,6 @@ import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
 
-import org.jetbrains.kotlin.gradle.test.androidalfa.R;
 
 public class MainActivity extends Activity {
 

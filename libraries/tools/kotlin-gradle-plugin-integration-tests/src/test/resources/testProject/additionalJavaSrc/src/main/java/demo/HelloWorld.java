@@ -1,6 +1,5 @@
 package demo;
 
-import demo.*;
 
 /**
  * Created by Nikita.Skvortsov

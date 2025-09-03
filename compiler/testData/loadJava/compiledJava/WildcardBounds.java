@@ -1,6 +1,5 @@
 package test;
 
-import java.lang.CharSequence;
 
 public class WildcardBounds {
     static class A<T> {}

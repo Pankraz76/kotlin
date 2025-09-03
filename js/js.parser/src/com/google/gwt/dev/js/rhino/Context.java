@@ -50,8 +50,6 @@ package com.google.gwt.dev.js.rhino;
 
 import org.jetbrains.annotations.NotNull;
 
-import java.beans.PropertyChangeEvent;
-import java.beans.PropertyChangeListener;
 import java.lang.reflect.Method;
 import java.text.MessageFormat;
 import java.util.Hashtable;

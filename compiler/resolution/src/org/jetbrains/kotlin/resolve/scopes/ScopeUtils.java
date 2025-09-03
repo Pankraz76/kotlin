@@ -20,14 +20,11 @@ import kotlin.Unit;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 import org.jetbrains.kotlin.descriptors.PropertyDescriptor;
-import org.jetbrains.kotlin.descriptors.ReceiverParameterDescriptor;
 import org.jetbrains.kotlin.descriptors.TypeParameterDescriptor;
 import org.jetbrains.kotlin.descriptors.VariableDescriptorWithAccessors;
 import org.jetbrains.kotlin.utils.Printer;
 
-import java.util.ArrayList;
 import java.util.Collections;
-import java.util.List;
 
 public final class ScopeUtils {
     private ScopeUtils() {}

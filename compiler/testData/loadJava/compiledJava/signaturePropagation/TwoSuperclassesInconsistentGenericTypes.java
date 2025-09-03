@@ -1,6 +1,5 @@
 package test;
 
-import org.jetbrains.annotations.NotNull;
 import java.util.List;
 
 public interface TwoSuperclassesInconsistentGenericTypes {

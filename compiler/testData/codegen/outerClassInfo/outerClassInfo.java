@@ -1,6 +1,5 @@
 package foo;
 
-import java.lang.Object;
 
 class Foo {
 

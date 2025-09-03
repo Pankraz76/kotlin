@@ -4,7 +4,6 @@ import lombok.Getter;
 import lombok.NonNull;
 import lombok.Setter;
 import lombok.ToString;
-import org.jetbrains.annotations.Nullable;
 
 @Getter @Setter @ToString
 public class SomePojo {

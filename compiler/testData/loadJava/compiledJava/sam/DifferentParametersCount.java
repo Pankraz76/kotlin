@@ -1,7 +1,5 @@
 package test;
 
-import kotlin.Unit;
-import kotlin.jvm.functions.Function0;
 
 public final class DifferentParametersCount {
     public static class A {

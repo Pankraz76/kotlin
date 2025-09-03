@@ -1,0 +1,72 @@
+/*
+ * SPDX-License-Identifier: Apache-2.0
+ *
+ * The OpenSearch Contributors require contributions made to
+ * this file be licensed under the Apache-2.0 license or a
+ * compatible open source license.
+ *
+ * Modifications Copyright OpenSearch Contributors. See
+ * GitHub history for details.
+ */
+
+project.apply plugin: "com.diffplug.spotless"
+project.apply plugin: "org.openrewrite.rewrite"
+
+allprojects {
+    project.apply plugin: "pmd"
+    // check.dependsOn(pmdMain) // why not working? Task with path 'pmdMain' not found in root project 'gradle'.
+}
+
+pmd {
+    consoleOutput = true
+    ruleSetFiles = files("${rootDir}/pmd.xml")
+    toolVersion = "7.16.0"
+}
+
+spotless {
+    kotlin {
+        // endWithNewline()
+        // ktlint()
+        target("**/*.kt")
+        targetExclude("**/*testData*/**", "**/*generated*/**")
+        // trimTrailingWhitespace()
+    }
+    java {
+        // endWithNewline()
+        removeUnusedImports()
+        target("**/*.java")
+        targetExclude("**/*testData*/**")
+        // trimTrailingWhitespace()
+    }
+}
+
+rewrite {
+    activeRecipe("CodeConvention")
+    exclusion("**testData**")
+    setExportDatatables(true)
+    setFailOnDryRunResults(true)
+}
+
+check.dependsOn(spotlessCheck)
+//check.dependsOn(spotlessCheck, pmdMain) //  Could not find com.android.tools.analytics-library:tracker:31.2.2.
+//check.dependsOn(spotlessCheck, rewriteDryRun) // rewrite not scaling
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    rewrite("org.openrewrite.recipe:rewrite-static-analysis:2.15.0")
+    rewrite("org.openrewrite.recipe:rewrite-third-party:0.26.0")
+}
+
+configurations {
+    rewrite {
+        attributes {
+            attribute(Attribute.of("org.gradle.dependency.bundling", String), "external")
+            attribute(Attribute.of("org.gradle.jvm.environment", String), "standard-jvm")
+            attribute(Attribute.of("org.gradle.libraryelements", String), "jar")
+            attribute(Attribute.of("org.gradle.usage", String), "java-runtime")
+        }
+    }
+}

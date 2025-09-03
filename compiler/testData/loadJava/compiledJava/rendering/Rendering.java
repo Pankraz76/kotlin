@@ -1,7 +1,5 @@
 package test;
 
-import java.lang.Integer;
-import java.lang.String;
 import java.util.*;
 
 public class Rendering {
