@@ -11,10 +11,25 @@
 
 project.apply plugin: "com.diffplug.spotless"
 project.apply plugin: "org.openrewrite.rewrite"
+project.apply plugin: "net.ltgt.errorprone"
 
 allprojects {
     project.apply plugin: "pmd"
     // check.dependsOn(pmdMain) // why not working? Task with path 'pmdMain' not found in root project 'gradle'.
+}
+
+
+tasks.withType<JavaCompile>().configureEach {
+    options.errorprone.allErrorsAsWarnings.set(true) // 1
+    options.errorprone.disableWarningsInGeneratedCode.set(true) // 2
+    options.errorprone.errorproneArgs.addAll(
+            //"-XepPatchChecks:MissingOverride,UnusedMethod", // 3 MissingOverride,UnusedMethod
+            "-XepPatchLocation:IN_PLACE" // 4
+    )
+}
+
+dependencies {
+    errorprone("com.google.errorprone:error_prone_core:2.41.0")
 }
 
 pmd {

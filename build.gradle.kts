@@ -68,6 +68,7 @@ plugins {
     id("com.autonomousapps.dependency-analysis") version "2.19.0"
     id("project-tests-convention") apply false
     id("org.openrewrite.rewrite") version "7.15.0"
+    id("net.ltgt.errorprone") version "4.3.0"
     id("com.diffplug.spotless") version "7.2.1"
     id("pmd")
 }
